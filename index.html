@@ -9,9 +9,9 @@
 <body>
     <div class="carousel">
         <div class="carousel__track-container">
-            <button class="carousel__previous js-carousel-previous"></button>
-            <button class="carousel__next js-carousel-next"></button>
-            <ul class="carousel__pictures">
+            <button class="carousel__previous" data-previous></button>
+            <button class="carousel__next" data-next></button>
+            <ul class="carousel__pictures" data-carousel-track>
                 <li class="carousel__slide js-active-slide">
                     <img class="carousel__image" src="img/slide1.jpg" alt="">
                 </li>
@@ -22,13 +22,13 @@
                     <img class="carousel__image" src="img/slide3.jpg" alt="">
                 </li>
             </ul>
-            <div class="carousel__nav">
-                <button class="carousel__indicator carousel__indicator--active js-active-slide"></button>
-                <button class="carousel__indicator"></button>
-                <button class="carousel__indicator"></button>
+            <div class="carousel__nav" data-carousel-nav>
+                <button class="carousel__indicator carousel__indicator--active" data-indicator="0"></button>
+                <button class="carousel__indicator" data-indicator="1"></button>
+                <button class="carousel__indicator" data-indicator="2"></button>
             </div>
         </div>
     </div>
-    <script src="js/carousel.js"></script>
+    <script src="js/index.js" type="module"></script>
 </body>
 </html>
